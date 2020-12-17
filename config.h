@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Monaco:size=11:antialias=true:autohint=true";
-static char *font2[] = { "Monaco:size=11:antialias=true:autohint=true" };
+static char *font = "FiraCode Nerd Font:size=12:antialias=true:autohint=true";
+static char *font2[] = { "FiraCode Nerd Font:size=11:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
