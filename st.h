@@ -34,9 +34,15 @@ enum glyph_attribute {
 	ATTR_WRAP       = 1 << 8,
 	ATTR_WIDE       = 1 << 9,
 	ATTR_WDUMMY     = 1 << 10,
-	ATTR_BOXDRAW    = 1 << 11,
+ 	ATTR_BOXDRAW    = 1 << 11,
 	ATTR_LIGA       = 1 << 12,
 	ATTR_BOLD_FAINT = ATTR_BOLD | ATTR_FAINT,
+};
+
+enum drawing_mode {
+	DRAW_NONE = 0,
+	DRAW_BG   = 1 << 0,
+	DRAW_FG   = 1 << 1,
 };
 
 enum selection_mode {
@@ -100,6 +106,7 @@ void sendbreak(const Arg *);
 void toggleprinter(const Arg *);
 
 int tattrset(int);
+int tisaltscr(void);
 void tnew(int, int);
 void tresize(int, int);
 void tsetdirtattr(int);
